@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".about_vehicle"
+    tools:context=".AboutVehicle"
     android:background="#212020">
 
     <TextView
@@ -19,13 +19,13 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btn_backspace"
+        android:id="@+id/btn_back"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:background="@android:color/transparent"
-        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"
+        android:drawableStart="@drawable/ic_baseline_back_24"
         android:drawableTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
@@ -139,6 +139,32 @@
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_wheel"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wheel" />
+
+    <TextView
+        android:id="@+id/btn_vehicle_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:text="@string/title_vehicle_manage"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

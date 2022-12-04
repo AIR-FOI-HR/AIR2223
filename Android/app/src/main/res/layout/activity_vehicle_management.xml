@@ -88,7 +88,7 @@
         android:rotationX="-109" />
 
     <Button
-        android:id="@+id/btn_detalji"
+        android:id="@+id/btn_details"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -104,7 +104,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
@@ -134,12 +133,12 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/number_of_kilometers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="-80dp"
-        android:text="@string/title_kilometri"
+        android:text="@string/title_kilometers"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
@@ -150,7 +149,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_upozorenja"
+        android:id="@+id/btn_warnings"
         style="materialComponent"
         android:layout_width="250dp"
         android:layout_height="wrap_content"

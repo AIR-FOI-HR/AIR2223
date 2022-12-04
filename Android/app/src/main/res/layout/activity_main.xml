@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-120dp"
-        android:text="@string/title_dobrodosli"
+        android:text="@string/title_welcome"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="40sp"

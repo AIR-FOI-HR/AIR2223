@@ -13,21 +13,28 @@
         android:theme="@style/Theme.MyCar"
         tools:targetApi="31">
         <activity
-            android:name=".about_vehicle"
+            android:name=".VehicleManage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".warning"
+            android:name=".AboutVehicle"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".vehicle_management"
+            android:name=".Warning"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".VehicleManagement"
             android:exported="false"
             android:label="@string/title_activity_vehicle_management">
             <meta-data

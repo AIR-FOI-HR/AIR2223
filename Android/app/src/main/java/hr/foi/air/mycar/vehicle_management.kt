@@ -1,6 +1,8 @@
 package hr.foi.air.mycar
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -9,7 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import hr.foi.air.mycar.databinding.ActivityVehicleManagementBinding
 
-class vehicle_management : AppCompatActivity() {
+class VehicleManagement : AppCompatActivity() {
 
     private lateinit var binding: ActivityVehicleManagementBinding
 
@@ -31,5 +33,17 @@ class vehicle_management : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val btnDetails = findViewById<Button>(R.id.btn_details)
+        btnDetails.setOnClickListener{
+            val intent = Intent(this,AboutVehicle::class.java)
+            startActivity(intent)
+        }
+
+        val btnWarnings = findViewById<Button>(R.id.btn_warnings)
+        btnWarnings.setOnClickListener{
+            val intent = Intent(this,Warning::class.java)
+            startActivity(intent)
+        }
     }
 }

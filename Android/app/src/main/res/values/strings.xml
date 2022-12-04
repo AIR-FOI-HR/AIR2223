@@ -10,15 +10,23 @@
     <string name="title_map">Karta</string>
     <string name="title_profile">Moj profil</string>
 
-    <string name="title_dobrodosli">Dobrodošli!</string>
+    <string name="title_welcome">Dobrodošli!</string>
     <string name="title_status">Status vozila</string>
-    <string name="title_kilometri">-</string>
+    <string name="title_kilometers">-</string>
     <string name="title_vehicle_name">Naziv vozila</string>
     <string name="title_about_vehicle">O vozilu</string>
     <string name="title_number_of_kilometers">Ukupan broj kilometara</string>
     <string name="title_number_of_kilometers_value">-</string>
     <string name="title_servis">Sljedeći servis za</string>
     <string name="title_servis_value">-</string>
+    <string name="title_vehicle_manage">Upravljaj vozilom</string>
+    <string name="title_controls">Kontrole</string>
+    <string name="title_power">Upali/ugasi</string>
+    <string name="title_short_light">Kratka svjetla</string>
+    <string name="title_long_light">Duga svjetla</string>
+    <string name="title_gas">Gas</string>
+    <string name="title_brake">Kočnica</string>
+    <string name="title_parking_brake">Parking kočnica</string>
 
     //buttons
     <string name="title_login">Prijava</string>
