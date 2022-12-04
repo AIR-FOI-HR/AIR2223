@@ -13,6 +13,13 @@
         android:theme="@style/Theme.MyCar"
         tools:targetApi="31">
         <activity
+            android:name=".about_vehicle"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".warning"
             android:exported="false">
             <meta-data

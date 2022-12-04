@@ -13,10 +13,17 @@
     <string name="title_dobrodosli">Dobrodošli!</string>
     <string name="title_status">Status vozila</string>
     <string name="title_kilometri">-</string>
+    <string name="title_vehicle_name">Naziv vozila</string>
+    <string name="title_about_vehicle">O vozilu</string>
+    <string name="title_number_of_kilometers">Ukupan broj kilometara</string>
+    <string name="title_number_of_kilometers_value">-</string>
+    <string name="title_servis">Sljedeći servis za</string>
+    <string name="title_servis_value">-</string>
 
     //buttons
     <string name="title_login">Prijava</string>
     <string name="title_registration">Registracija</string>
-    <string name="title_detalji">Detalji</string>
-    <string name="title_upozorenja">Upozorenja</string>
+    <string name="title_details">Detalji</string>
+    <string name="title_warnings">Upozorenja</string>
+
 </resources>
