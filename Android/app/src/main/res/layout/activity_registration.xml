@@ -83,7 +83,7 @@
         android:drawableTint="@color/white"
         android:ems="10"
         android:hint="Lozinka"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -131,7 +131,7 @@
         android:drawableTint="@color/white"
         android:ems="10"
         android:hint="E-mail"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -156,5 +156,33 @@
         app:layout_constraintEnd_toEndOf="@+id/inputPassword"
         app:layout_constraintStart_toStartOf="@+id/inputPassword"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+    <Button
+        android:id="@+id/btnBackRegistration"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:drawableTint="@color/white"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnShowPasswordRegistration"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_baseline_remove_red_eye_24"
+        android:drawableTint="@color/white"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="@+id/inputPassword"
+        app:layout_constraintTop_toTopOf="@+id/inputPassword"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
