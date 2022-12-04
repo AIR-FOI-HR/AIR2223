@@ -15,5 +15,6 @@ class Warning : AppCompatActivity() {
             val intent = Intent(this,VehicleManagement::class.java)
             startActivity(intent)
         }
+
     }
 }
