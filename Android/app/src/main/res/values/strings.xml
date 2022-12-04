@@ -1,7 +1,22 @@
 <resources>
+    //app name
     <string name="app_name">myCar</string>
+
+    //activities
     <string name="title_activity_vehicle_management">vehicle_management</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    //bottom navigation
+    <string name="title_myCar">Moj auto</string>
+    <string name="title_map">Karta</string>
+    <string name="title_profile">Moj profil</string>
+
+    <string name="title_dobrodosli">Dobrodošli!</string>
+    <string name="title_status">Status vozila</string>
+    <string name="title_kilometri">-</string>
+
+    //buttons
+    <string name="title_login">Prijava</string>
+    <string name="title_registration">Registracija</string>
+    <string name="title_detalji">Detalji</string>
+    <string name="title_upozorenja">Upozorenja</string>
 </resources>
