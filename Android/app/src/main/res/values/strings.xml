@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">myCar</string>
+    <string name="my_garage">Moja garaža</string>
+    <string name="btn_add">Dodaj vozilo</string>
 </resources>
