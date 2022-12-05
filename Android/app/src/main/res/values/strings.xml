@@ -24,6 +24,7 @@
     <string name="title_power">Upali/ugasi</string>
     <string name="title_short_light">Kratka svjetla</string>
     <string name="title_long_light">Duga svjetla</string>
+    <string name="title_speed">-</string>
     <string name="title_gas">Gas</string>
     <string name="title_brake">Kočnica</string>
     <string name="title_parking_brake">Parking kočnica</string>

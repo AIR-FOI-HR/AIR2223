@@ -12,7 +12,7 @@ class VehicleManage : AppCompatActivity() {
 
         val btnClose = findViewById<Button>(R.id.btn_close)
         btnClose.setOnClickListener{
-            val intent = Intent(this,VehicleManagement::class.java)
+            val intent = Intent(this,AboutVehicle::class.java)
             startActivity(intent)
         }
     }

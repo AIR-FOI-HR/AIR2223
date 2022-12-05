@@ -5,6 +5,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 
 class AboutVehicle : AppCompatActivity() {
@@ -19,7 +21,7 @@ class AboutVehicle : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btnWheel = findViewById<Button>(R.id.btn_wheel)
+        val btnWheel = findViewById<ImageView>(R.id.btn_wheel)
         btnWheel.setOnClickListener{
             val intent = Intent(this,VehicleManage::class.java)
             startActivity(intent)

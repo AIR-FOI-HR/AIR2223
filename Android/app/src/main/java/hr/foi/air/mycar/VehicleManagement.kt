@@ -13,11 +13,12 @@ import hr.foi.air.mycar.databinding.ActivityVehicleManagementBinding
 
 class VehicleManagement : AppCompatActivity() {
 
-    private lateinit var binding: ActivityVehicleManagementBinding
+    //private lateinit var binding: ActivityVehicleManagementBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setContentView(R.layout.activity_vehicle_management)
+        /*
         binding = ActivityVehicleManagementBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -32,7 +33,7 @@ class VehicleManagement : AppCompatActivity() {
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        navView.setupWithNavController(navController)*/
 
         val btnDetails = findViewById<Button>(R.id.btn_details)
         btnDetails.setOnClickListener{
