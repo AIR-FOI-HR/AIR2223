@@ -23,22 +23,18 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         val buttonLogin = view.findViewById<Button>(R.id.btn_login)
-
-        buttonLogin.setOnClickListener {
-
-            val intent = Intent(context, LoginActivity::class.java)
-
         val buttonRegistration = view.findViewById<Button>(R.id.button)
 
+        buttonLogin.setOnClickListener {
+            val intentLogin = Intent(context, LoginActivity::class.java)
+            startActivity(intentLogin)
+        }
+
         buttonRegistration.setOnClickListener {
-
             val intentReg = Intent(context, RegistrationActivity::class.java)
-
-
             startActivity(intentReg)
         }
         return view

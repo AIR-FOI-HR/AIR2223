@@ -27,39 +27,18 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDEK2H_RZu3Rmrb2kt8pPyvdUsRvYKLwyI" />
-
-        <activity
-            android:name=".VehicleManage"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".AboutVehicle"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Warning"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".VehicleManagement"
-            android:exported="false"
-            android:label="@string/title_activity_vehicle_management">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
         <activity
 
             android:name=".RegistrationActivity"
+
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+
+            android:name=".LoginActivity"
 
             android:exported="false">
             <meta-data
