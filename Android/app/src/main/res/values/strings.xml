@@ -6,9 +6,10 @@
     <string name="title_activity_vehicle_management">vehicle_management</string>
 
     //bottom navigation
-    <string name="title_myCar">Moj auto</string>
-    <string name="title_map">Karta</string>
-    <string name="title_profile">Moj profil</string>
+    <string name="title_home"><font color='white'>Početna</font></string>
+    <string name="title_myCar"><font color='white'>Moj auto</font></string>
+    <string name="title_map"><font color='white'>Karta</font></string>
+    <string name="title_profile"><font color='white'>Profil</font></string>
 
     <string name="title_welcome">Dobrodošli!</string>
     <string name="title_status">Status vozila</string>
@@ -34,5 +35,7 @@
     <string name="title_registration">Registracija</string>
     <string name="title_details">Detalji</string>
     <string name="title_warnings">Upozorenja</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
