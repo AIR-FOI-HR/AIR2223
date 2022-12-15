@@ -11,7 +11,7 @@
         android:id="@+id/textViewRegistration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_registration"
+        android:text="@string/registration_title"
         android:textColor="@color/white"
         android:textSize="33sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,14 +148,16 @@
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/btnbackground_registration"
         android:text="@string/btn_registration"
-        android:textSize="24dp"
         android:textColor="#000000"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="@+id/inputPassword"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/inputPassword"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
     <Button
         android:id="@+id/btnBackRegistration"
         android:layout_width="48dp"

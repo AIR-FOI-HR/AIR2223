@@ -24,6 +24,7 @@ class RegistrationActivity : AppCompatActivity() {
             }
         }
 
+        //povratak na Home fragment
         val btnBack = findViewById<Button>(R.id.btnBackRegistration)
         btnBack.setOnClickListener{
             val intent = Intent(this,MainActivity::class.java)
