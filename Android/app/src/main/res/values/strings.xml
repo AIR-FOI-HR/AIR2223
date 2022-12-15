@@ -2,6 +2,8 @@
     //app name
     <string name="app_name">myCar</string>
 
+    <string name="login_title">Prijava</string>
+    <string name="btn_login">Prijavi se</string>
     <string name="registration_title"><b>Registracija</b></string>
     <string name="btn_registration"><b>Registriraj se</b></string>
 
