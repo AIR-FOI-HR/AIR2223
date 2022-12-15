@@ -1,4 +1,42 @@
 <resources>
+    //app name
     <string name="app_name">myCar</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    //activities
+    <string name="title_activity_vehicle_management">vehicle_management</string>
+
+    //bottom navigation
+    <string name="title_home"><font color='white'>Početna</font></string>
+    <string name="title_myCar"><font color='white'>Moj auto</font></string>
+    <string name="title_map"><font color='white'>Karta</font></string>
+    <string name="title_profile"><font color='white'>Profil</font></string>
+
+    <string name="title_welcome">Dobrodošli!</string>
+    <string name="title_status">Status vozila</string>
+    <string name="title_kilometers">-</string>
+    <string name="title_vehicle_name">Naziv vozila</string>
+    <string name="title_about_vehicle">O vozilu</string>
+    <string name="title_number_of_kilometers">Ukupan broj kilometara</string>
+    <string name="title_number_of_kilometers_value">-</string>
+    <string name="title_servis">Sljedeći servis za</string>
+    <string name="title_servis_value">-</string>
+    <string name="title_vehicle_manage">Upravljaj vozilom</string>
+    <string name="title_controls">Kontrole</string>
+    <string name="title_power">Upali/ugasi</string>
+    <string name="title_short_light">Kratka svjetla</string>
+    <string name="title_long_light">Duga svjetla</string>
+    <string name="title_speed">-</string>
+    <string name="title_gas">Gas</string>
+    <string name="title_brake">Kočnica</string>
+    <string name="title_parking_brake">Parking kočnica</string>
+
+    //buttons
+    <string name="title_login">Prijava</string>
+    <string name="title_registration">Registracija</string>
+    <string name="title_details">Detalji</string>
+    <string name="title_warnings">Upozorenja</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
