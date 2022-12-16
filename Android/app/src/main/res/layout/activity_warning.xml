@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.WarningFragment">
+    tools:context=".WarningActivity"
+    android:background="#212020">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginTop="0dp"
         android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,19 +34,17 @@
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-580dp"
         android:text="@string/title_warnings"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

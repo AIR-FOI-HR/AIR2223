@@ -136,7 +136,6 @@
 
     <Button
         android:id="@+id/btn_warnings"
-        style="materialComponent"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="430dp"

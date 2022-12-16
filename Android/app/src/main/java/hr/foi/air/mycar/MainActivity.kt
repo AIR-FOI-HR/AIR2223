@@ -1,11 +1,7 @@
 package hr.foi.air.mycar
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import androidx.fragment.app.FragmentManager
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -13,7 +9,6 @@ import hr.foi.air.mycar.adapters.PageAdapter
 import hr.foi.air.mycar.fragments.HomeFragment
 import hr.foi.air.mycar.fragments.MapFragment
 import hr.foi.air.mycar.fragments.ProfileFragment
-import hr.foi.air.mycar.fragments.VehicleManagementFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewPager : ViewPager2
@@ -29,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         pagerAdapter.Add(PageAdapter.Item(R.string.title_map, R.drawable.ic_baseline_map_24, MapFragment::class))
         pagerAdapter.Add(PageAdapter.Item(R.string.title_profile, R.drawable.ic_baseline_person_24, ProfileFragment::class))
 
+        viewPager.setUserInputEnabled(false);
+
         viewPager.adapter = pagerAdapter
 
         TabLayoutMediator(tabLayout, viewPager){
@@ -39,21 +36,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun checkLastActivity(){
+        val activityIndex = intent.getStringExtra("ActivityIndex")
+        if(activityIndex == "AboutVehicleActivity" || activityIndex == "WarningActivity"){
+            viewPager.setCurrentItem(1)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         createNavigation()
-
-        //test za provjeru navigacije
-        /*
-        val btnLogin = findViewById<Button>(R.id.btn_login)
-        btnLogin.setOnClickListener{
-            val intent = Intent(this,VehicleManagement::class.java)
-            startActivity(intent)
-        }*/
+        checkLastActivity()
     }
-    //testiranje
-    //test15
-    //test16
 }
