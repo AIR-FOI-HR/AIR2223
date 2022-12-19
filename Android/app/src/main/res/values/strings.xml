@@ -28,21 +28,12 @@
     <string name="title_servis">Sljedeći servis za</string>
     <string name="title_servis_value">-</string>
     <string name="title_vehicle_manage">Upravljaj vozilom</string>
-    <string name="title_controls">Kontrole</string>
-    <string name="title_power">Upali/ugasi</string>
-    <string name="title_short_light">Kratka svjetla</string>
-    <string name="title_long_light">Duga svjetla</string>
-    <string name="title_speed">-</string>
-    <string name="title_gas">Gas</string>
-    <string name="title_brake">Kočnica</string>
-    <string name="title_parking_brake">Parking kočnica</string>
 
     //buttons
     <string name="title_login">Prijava</string>
     <string name="title_registration">Registracija</string>
     <string name="title_details">Detalji</string>
     <string name="title_warnings">Upozorenja</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
