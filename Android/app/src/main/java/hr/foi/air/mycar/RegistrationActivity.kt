@@ -8,9 +8,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.android.volley.*
+import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import org.json.JSONArray
 import org.json.JSONObject
 
 class RegistrationActivity : AppCompatActivity() {
@@ -33,7 +35,7 @@ class RegistrationActivity : AppCompatActivity() {
         inputLozinka = findViewById(R.id.inputPassword)
         btnRegistirajSe = findViewById(R.id.btnRegister)
         requestQueue = Volley.newRequestQueue(applicationContext);
-        url = "https://mycar-db.000webhostapp.com/insertUser.php"
+        url = "https://mycar-db.000webhostapp.com/regTest.php"
 
         //password show - on/off
         val btnShowPassword = findViewById<Button>(R.id.btnShowPasswordRegistration)
@@ -54,38 +56,62 @@ class RegistrationActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnRegistirajSe.setOnClickListener {
+        val korisnikObject = JSONObject()
+        korisnikObject.put("ime_prezime", inputImeIPrezime.text)
+        korisnikObject.put("email", inputEmail.text)
+        korisnikObject.put("korisnicko_ime", inputKorisnickoIme.text)
+        korisnikObject.put("lozinka", inputLozinka.text)
 
+        btnRegistirajSe.setOnClickListener {
             if (inputImeIPrezime.text.toString() == "" || inputEmail.text.toString() == "" ||
                 inputKorisnickoIme.text.toString() == "" || inputLozinka.text.toString() == ""
             ) {
                 Toast.makeText(this, "Popunite sve podatke!", Toast.LENGTH_LONG).show()
             } else {
-                val requestQueue = Volley.newRequestQueue(this)
+                val request = JsonObjectRequest(Request.Method.POST, url, korisnikObject,
+                    { response ->
+                        // handle the response
+                        if (response.get("exists") == true) {
+                            Toast.makeText(
+                                applicationContext,
+                                "Korisničko ime je zauzeto!",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        } else {
+                            inputImeIPrezime.setText("")
+                            inputEmail.setText("")
+                            inputKorisnickoIme.setText("")
+                            inputLozinka.setText("")
 
-                val jsonObject = JSONObject()
-                jsonObject.put("ime_prezime", inputImeIPrezime.text.toString())
-                jsonObject.put("email", inputEmail.text.toString())
-                jsonObject.put("korisnicko_ime", inputKorisnickoIme.text.toString())
-                jsonObject.put("lozinka", inputLozinka.text.toString())
+                            Toast.makeText(
+                                applicationContext,
+                                "Uspješna registracija!",
+                                Toast.LENGTH_SHORT
+                            ).show()
 
-                val jsonRequest = object : JsonObjectRequest(Method.POST, url, jsonObject,
-                    Response.Listener { response ->
-                        Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
+                            callLogin()
+                        }
+                        println(response)
                     },
-                    Response.ErrorListener { error ->
-                        //error
-                    }) {
-                }
-
-                requestQueue.add(jsonRequest)
-
-                inputImeIPrezime.setText("")
-                inputEmail.setText("")
-                inputKorisnickoIme.setText("")
-                inputLozinka.setText("")
+                    { error ->
+                        // handle the error
+                        Toast.makeText(applicationContext, "Neuspjela veza!", Toast.LENGTH_SHORT)
+                            .show()
+                        error.printStackTrace()
+                    }
+                )
+                val queue = Volley.newRequestQueue(this)
+                queue.add(request)
             }
         }
     }
+
+    private fun callLogin() {
+        val intent = Intent(this, LoginActivity::class.java).also {
+            it.putExtra("ActivityIndex", "RegistrationActivity")
+            startActivity(it)
+        }
+    }
 }
+
 
