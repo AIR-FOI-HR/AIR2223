@@ -66,10 +66,10 @@ class LoginActivity : AppCompatActivity() {
                         // handle the response
                         if(response.get("success") == true){
                             Toast.makeText(applicationContext, "Uspješna prijava!", Toast.LENGTH_SHORT).show()
+                            callMain()
                         }else{
                             Toast.makeText(applicationContext, "Neuspješna prijava!", Toast.LENGTH_SHORT).show()
                         }
-                        //Toast.makeText(applicationContext, "Uspješna prijava!", Toast.LENGTH_SHORT).show()
                         println(response)
                     },
                     { error ->
@@ -82,6 +82,14 @@ class LoginActivity : AppCompatActivity() {
                 val queue = Volley.newRequestQueue(this)
                 queue.add(request)
             }
+        }
+
+    }
+
+    private fun callMain() {
+        val intent = Intent(this, MainActivity::class.java).also {
+            it.putExtra("ActivityIndex", "LoginActivity")
+            startActivity(it)
         }
     }
 }

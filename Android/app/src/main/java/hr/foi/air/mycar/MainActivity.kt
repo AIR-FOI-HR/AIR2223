@@ -39,21 +39,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun checkLastActivity(){
+        val activityIndex = intent.getStringExtra("ActivityIndex")
+        if(activityIndex == "AboutVehicleActivity" || activityIndex == "WarningActivity" || activityIndex == "LoginActivity"){
+            viewPager.setCurrentItem(1)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         createNavigation()
-
-        //test za provjeru navigacije
-        /*
-        val btnLogin = findViewById<Button>(R.id.btn_login)
-        btnLogin.setOnClickListener{
-            val intent = Intent(this,VehicleManagement::class.java)
-            startActivity(intent)
-        }*/
+        checkLastActivity()
     }
-    //testiranje
-    //test15
-    //test16
 }
