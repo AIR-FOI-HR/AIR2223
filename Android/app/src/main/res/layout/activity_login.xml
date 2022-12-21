@@ -56,7 +56,7 @@
         android:drawablePadding="10dp"
         android:drawableTint="@color/white"
         android:ems="10"
-        android:hint="Ime i prezime"
+        android:hint="Korisničko ime"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
